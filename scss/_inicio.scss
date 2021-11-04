@@ -1,0 +1,68 @@
+h1 {
+	color: $font-color-h;
+	font-family: $font-family-h;
+	font-weight: bold;
+	font-size: $font-size-h1;
+	display: flex;
+	justify-content: center;
+}
+
+h2 {
+	color: $font-color-h;
+	font-family: $font-family-h;
+	font-weight: bold;
+	margin-top: 7rem;
+	font-size: $font-size-h2;
+	display: flex;
+	justify-content: center;
+}
+
+.buttonGradient {
+	text-align: center;
+}
+
+button {
+	width: 8rem;
+	height: 3rem;
+	margin-top: 1.5rem;
+	background-image: url(../css/fondo2.jpg);
+	color: #880f0f;
+	font-weight: bold;
+	&:hover {
+		background: $button-hover;
+		color: rgb(19, 1, 1);
+		cursor: pointer;
+	}
+}
+
+.buttonIndex {
+	font-family: $font-family-button;
+}
+
+p {
+	color: $font-color-p;
+	font-family: $font-family-p;
+	text-align: center;
+}
+
+@media only screen and (max-width: 340px) {
+    .mainTitles {
+        h2 {
+            font-size: 18px;
+            margin-top:10.5rem;
+        }
+        h1 {
+            font-size: $font-size-h1-xs;
+        }
+        padding-left: 0.6rem;
+    }
+
+    button {
+		width: 7rem;
+		height: 2.5rem;
+	}
+	.buttonIndex {
+		font-size: $font-size-button-xs
+	}
+}
+

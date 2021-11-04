@@ -1,0 +1,79 @@
+.virals__title {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.virals__bannerVirals {
+    padding-top: 0%;
+}
+
+.virals__container {
+	padding: 1rem;
+	border: 2px solid rgb(114, 7, 7);
+	border-radius: 5px;
+	width: 60%;
+	margin: auto;
+	margin-bottom: 10px;
+	&:hover {
+		background: linear-gradient(225deg, #580505 0%, #460d03 100%);
+		cursor: pointer;
+	}
+}
+
+.virals__content {
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	padding: 1rem;
+	p {
+		text-align: left;
+		&:hover {
+			color: rgb(0, 0, 0);
+			font-weight: bold;
+		}
+	}
+}
+
+.virals__img {
+	width: 7rem;
+	height: 7rem;
+}
+
+@media only screen and (max-width: 760px) {
+    .virals__content {
+		flex-direction: column;
+		align-items: center;
+		p {
+			margin-bottom: 2rem;
+			font-size: $font-size-p-m;
+		}
+	}
+	.virals__container {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 340px) {
+    .virals__title {
+		font-size: $font-size-h2-xs;
+	}
+
+    .virals__content {
+		p {
+			font-size: $font-size-p-xs;
+		}
+		img {
+			padding-top: 1.5rem;
+		}
+		flex-direction: column;
+		align-items: center;
+	}
+
+    .virals__container {
+		width: 90%;
+		.virals__title--secondary {
+			font-size: $font-size-h3-xs;
+		}
+	}
+}
+
