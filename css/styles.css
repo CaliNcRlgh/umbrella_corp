@@ -396,3 +396,18 @@ body {
   justify-content: center;
   padding-top: 70px;
   opacity: 0.6; }
+
+.redes__spotify i {
+  color: #880f0f; }
+
+.redes__instagram i {
+  color: #ffffff; }
+
+.redes__twitter i {
+  color: #880f0f; }
+
+.redes__facebook i {
+  color: #ffffff; }
+
+.redes__telegram i {
+  color: #880f0f; }

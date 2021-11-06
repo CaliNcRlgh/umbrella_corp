@@ -31,3 +31,18 @@ body {
 	padding-top: 70px;
 	opacity: 0.6;
 }
+
+$redes-colors: (
+	spotify: #880f0f,
+	instagram: #ffffff,
+	twitter: #880f0f,
+	facebook: #ffffff,
+	telegram: #880f0f
+);
+
+@each $red, $color in $redes_colors {
+	.redes__#{$red} i {
+		color: $color ;
+		
+	}
+}
